@@ -6,5 +6,16 @@ Desktop.ini
 # python
 *.pyc
 
+#virtualenv
+bin
+include
+lib
+local
+pip-selfcheck.json
+
+#idea
+.idea
+
+
 #secure
 src_app/res.yml
