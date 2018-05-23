@@ -1,0 +1,10 @@
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# python
+*.pyc
+
+#secure
+src_app/res.yml
