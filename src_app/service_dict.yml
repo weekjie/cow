@@ -1,0 +1,4 @@
+services:
+  www.ceair.com:
+    respority: webserver
+    path: "b2c/www.ceair.com"

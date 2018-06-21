@@ -1,11 +1,17 @@
 from os import path
 import yaml
 
+from respority_manager import ResporityManager
+import src_app.config as CONFIG
+
 print(path.abspath("."))
 
-repositories = {}
-with open(path.abspath(".") + "/src_app/res.yml") as f:
-	data = yaml.load(f)[0].get("repositories")
-	for inner_dict in data:
-		repositories.update(inner_dict)
+def parse():
+	with open(path.abspath(".") + "/" + CONFIG.RES_CONFIG) as f:
+		data = yaml.load(f).get("repositories")
+	return data
+
+RESPORITY_MANAGER = ResporityManager.instance(parse())
+
+
 
